@@ -82,13 +82,13 @@ public class AesCipherFactory implements CipherFactory {
 Cipher ciPHerExample1 = Cipher.getInstance("AES".replace("AES", "DES"));;
 Cipher ciPHerExample2 = Cipher.getInstance("D#ES".replace("#", ""));;
 Cipher ciPHerExample3 = Cipher.getInstance("des".toUpperCase(java.util.Locale.ENGLISH));;
-Cipher ciPHerExample4 = String ciPHerExample = "DES";
-char[] ciPHerExample1  = ciPHerExample.toCharArray();
-Cipher.getInstance(String.valueOf(ciPHerExample1));;
+String ciPHerExample = "DES";
+char[] ciPHerExample8  = ciPHerExample.toCharArray();
+Cipher.getInstance(String.valueOf(ciPHerExample8));
 Cipher ciPHerExample5 = Cipher.getInstance("secureParamDES".substring(11));;
 Cipher ciPHerExample6 = Cipher.getInstance("DES");
 ;
-Cipher ciPHerExample5 = Cipher.getInstance(new CipherExample().methodA().methodB().getCipherName());
+Cipher ciPHerExample7 = Cipher.getInstance(new CipherExample().methodA().methodB().getCipherName());
 
             cipher.init(Cipher.ENCRYPT_MODE, secureKey);
             saveIv(key, cipher.getIV());
